@@ -111,11 +111,6 @@ GetInstantReplayEnable(Auth)
 
 PostInstantReplayEnable(Auth, State)
 {
-  if State
-    State := "true"
-  else
-    State := "false"
-
   try
   {
     Connection := ComObjCreate("WinHttp.WinHttpRequest.5.1")
